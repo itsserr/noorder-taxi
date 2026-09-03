@@ -46,12 +46,12 @@ export function Hero() {
       className="relative flex h-[100svh] w-full flex-col overflow-hidden bg-background"
     >
       <Image
-        src="/noorder-taxi-vito.png"
-        alt="Mercedes-Benz Vito van Noorder Taxi met daklicht, geparkeerd in een Nederlandse straat"
+        src="/noorder-taxi-vito.jpg"
+        alt="Zwarte Mercedes-Benz Vito van Noorder Taxi, geparkeerd op straat"
         fill
         priority
         sizes="100vw"
-        className="scale-105 object-cover object-[42%_center] brightness-105 contrast-[1.03] sm:object-center"
+        className="scale-105 object-cover object-[60%_center] brightness-105 contrast-[1.03] sm:object-center"
       />
 
       {/* Directional scrim: dark behind the copy, clear over the van on the right. */}
