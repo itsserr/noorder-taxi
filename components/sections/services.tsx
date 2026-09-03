@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Plane, Briefcase, User, Moon, Route, CalendarClock, ArrowRight } from "lucide-react";
+import { Plane, Briefcase, User, Moon, PartyPopper, CalendarClock, ArrowRight } from "lucide-react";
 import { SERVICES } from "@/lib/constants";
 
-const ICONS = [Plane, Briefcase, User, Moon, Route, CalendarClock];
+const ICONS = [Plane, Briefcase, User, Moon, PartyPopper, CalendarClock];
 
 export function Services() {
   return (

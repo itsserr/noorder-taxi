@@ -51,12 +51,12 @@ export const SERVICES = [
       "Noorder Taxi is 24 uur per dag op afspraak beschikbaar. Een late vlucht, een nachtdienst of een feestje dat uitloopt: u wordt altijd veilig thuisgebracht.",
   },
   {
-    slug: "lange-afstanden",
-    title: "Lange afstanden",
+    slug: "feest-vervoer",
+    title: "Feest vervoer",
     description:
-      "Comfortabel vervoer naar bestemmingen buiten de regio, zonder tussenstops of overstappen.",
+      "Veilig en verzorgd naar en van feesten, bruiloften en partijen — dag en nacht, u hoeft nergens op te letten.",
     detail:
-      "Een rit naar een andere stad of het buitenland? Leun achterover terwijl wij de weg kennen. Eén vaste prijs, vooraf afgesproken.",
+      "Op weg naar een bruiloft, verjaardag, personeelsfeest of een avond stappen? Wij brengen en halen uw hele gezelschap, zodat niemand hoeft te rijden. Overdag of 's avonds laat: geniet zorgeloos en kom veilig thuis.",
   },
   {
     slug: "vervoer-op-afspraak",

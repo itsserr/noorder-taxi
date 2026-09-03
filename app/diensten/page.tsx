@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Plane, Briefcase, User, Moon, Route, CalendarClock, ArrowRight } from "lucide-react";
+import { Plane, Briefcase, User, Moon, PartyPopper, CalendarClock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CtaSection } from "@/components/sections/cta-section";
 import { SERVICES } from "@/lib/constants";
 
-const ICONS = [Plane, Briefcase, User, Moon, Route, CalendarClock];
+const ICONS = [Plane, Briefcase, User, Moon, PartyPopper, CalendarClock];
 
 export const metadata: Metadata = {
   title: "Diensten",
   description:
-    "Luchthavenvervoer, zakelijk en particulier vervoer, nachtelijke ritten, lange afstanden en vervoer op afspraak — alle diensten van Noorder Taxi op een rij.",
+    "Luchthavenvervoer, zakelijk en particulier vervoer, nachtelijke ritten, feest vervoer en vervoer op afspraak — alle diensten van Noorder Taxi op een rij.",
 };
 
 export default function DienstenPage() {
