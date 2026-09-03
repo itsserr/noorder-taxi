@@ -188,7 +188,7 @@ export function BookingForm() {
             type="tel"
             value={form.telefoon}
             onChange={(e) => update("telefoon", e.target.value)}
-            placeholder="06 12 34 56 78"
+            placeholder="06 12345678"
             aria-invalid={!!errors.telefoon}
           />
           {errors.telefoon && (
