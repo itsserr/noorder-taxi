@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Noorder Taxi",
   tagline: "Persoonlijk vervoer, vakkundig gereden.",
-  phone: "+31 6 12 34 56 78",
-  phoneHref: "tel:+31612345678",
-  whatsapp: "31612345678",
+  phone: "06-31304241",
+  phoneHref: "tel:+31631304241",
+  whatsapp: "31631304241",
   email: "info@noordertaxi.nl",
   kvk: "42055928",
   btw: "NL005460137B10",
