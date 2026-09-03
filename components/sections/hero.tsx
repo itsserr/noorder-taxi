@@ -46,7 +46,7 @@ export function Hero() {
       className="relative flex h-[100svh] w-full flex-col overflow-hidden bg-background"
     >
       <Image
-        src="/noorder-taxi-vito.jpg"
+        src="/noorder-taxi-hero.jpg"
         alt="Zwarte Mercedes-Benz Vito van Noorder Taxi, geparkeerd op straat"
         fill
         priority
