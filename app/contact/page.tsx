@@ -26,7 +26,7 @@ const DETAILS = [
   {
     icon: Clock,
     label: "Bereikbaarheid",
-    value: "Dagelijks van 06:00 tot 00:00",
+    value: "24/7 beschikbaar op afspraak",
     href: undefined,
   },
 ];

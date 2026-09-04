@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 import { RouteLine } from "@/components/ui/route-line";
+import { PaymentMethods } from "@/components/layout/payment-methods";
 
 export function Footer() {
   return (
@@ -70,7 +71,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-white/5 pt-10 text-xs text-muted-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 border-t border-white/5 pt-10">
+          <PaymentMethods />
+        </div>
+
+        <div className="mt-10 flex flex-col gap-3 border-t border-white/5 pt-10 text-xs text-muted-2 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {SITE.name}. Alle rechten
             voorbehouden.
