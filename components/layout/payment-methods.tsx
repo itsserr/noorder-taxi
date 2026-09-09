@@ -170,9 +170,9 @@ const METHODS = [
 
 export function PaymentMethods() {
   return (
-    <div>
-      <p className="eyebrow mb-4">Betaalmethoden</p>
-      <div className="flex flex-wrap items-center gap-2.5">
+    <div className="flex flex-col items-center text-center">
+      <p className="eyebrow mb-4 justify-center">Betaalmethoden</p>
+      <div className="flex flex-wrap items-center justify-center gap-2.5">
         {METHODS.map((m) => (
           <Tile key={m.label} label={m.label}>
             {m.node}
