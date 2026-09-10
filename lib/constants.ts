@@ -122,21 +122,21 @@ export const HOW_IT_WORKS = [
 export const REVIEWS = [
   {
     name: "S. Willems",
-    location: "Amsterdam",
+    location: "Groningen",
     rating: 5,
     quote:
       "Ruim op tijd voor onze vlucht om vier uur 's ochtends. Rustige rit, representatieve chauffeur.",
   },
   {
     name: "M. de Groot",
-    location: "Amstelveen",
+    location: "Haren",
     rating: 5,
     quote:
       "Wij gebruiken Noorder Taxi voor al ons zakelijk vervoer. Altijd stipt en de facturatie is moeiteloos geregeld.",
   },
   {
     name: "R. Jansen",
-    location: "Haarlem",
+    location: "Assen",
     rating: 5,
     quote:
       "Een rit laat op de avond geboekt na een etentje dat uitliep. Binnen een kwartier telefonisch bevestigd.",

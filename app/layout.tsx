@@ -23,13 +23,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.noordertaxi.nl"),
   title: {
-    default: "Noorder Taxi | Exclusief taxivervoer in Amsterdam en omgeving",
+    default: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
     template: "%s | Noorder Taxi",
   },
   description:
     "Noorder Taxi verzorgt persoonlijk, hoogwaardig taxivervoer voor luchthaventransfers, zakelijke ritten en speciale gelegenheden. Reserveer eenvoudig online, telefonisch bevestigd.",
   keywords: [
-    "taxi Amsterdam",
+    "taxi Groningen",
     "luxe taxi",
     "luchthaventransfer Schiphol",
     "zakelijk taxivervoer",
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "nl_NL",
     siteName: "Noorder Taxi",
-    title: "Noorder Taxi | Exclusief taxivervoer in Amsterdam en omgeving",
+    title: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
     description:
       "Persoonlijk, hoogwaardig taxivervoer. Luchthaventransfers, zakelijke ritten en speciale gelegenheden — telefonisch bevestigd.",
     url: "https://www.noordertaxi.nl",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noorder Taxi | Exclusief taxivervoer in Amsterdam en omgeving",
+    title: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
     description:
       "Persoonlijk, hoogwaardig taxivervoer. Reserveer eenvoudig, telefonisch bevestigd.",
   },
