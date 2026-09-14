@@ -40,7 +40,7 @@ export default function ContactPage() {
           We staan voor u klaar
         </h1>
         <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-          Voor een rit binnen 24 uur belt of appt u ons het snelst — dan
+          Voor een rit binnen 24 uur belt of appt u ons het snelst, dan
           regelen we het direct telefonisch. Plant u verder vooruit, gebruik
           dan gerust ons reserveringsformulier.
         </p>

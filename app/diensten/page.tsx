@@ -10,7 +10,7 @@ const ICONS = [Plane, Briefcase, User, Moon, PartyPopper, CalendarClock];
 export const metadata: Metadata = {
   title: "Diensten",
   description:
-    "Luchthavenvervoer, zakelijk en particulier vervoer, nachtelijke ritten, feest vervoer en vervoer op afspraak — alle diensten van Noorder Taxi op een rij.",
+    "Luchthavenvervoer, zakelijk en particulier vervoer, nachtelijke ritten, feest vervoer en vervoer op afspraak. Alle diensten van Noorder Taxi op een rij.",
 };
 
 export default function DienstenPage() {
@@ -57,7 +57,7 @@ export default function DienstenPage() {
 
           <div className="mt-14 flex flex-col items-center gap-4 text-center">
             <p className="max-w-md text-sm leading-relaxed text-muted">
-              Staat uw situatie er niet precies bij? Neem contact op — wij
+              Staat uw situatie er niet precies bij? Neem contact op, wij
               denken graag mee over de beste oplossing voor uw rit.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">

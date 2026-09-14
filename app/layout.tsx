@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Noorder Taxi",
     title: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
     description:
-      "Persoonlijk, hoogwaardig taxivervoer. Luchthaventransfers, zakelijke ritten en speciale gelegenheden — telefonisch bevestigd.",
+      "Persoonlijk, hoogwaardig taxivervoer. Luchthaventransfers, zakelijke ritten en speciale gelegenheden, telefonisch bevestigd.",
     url: "https://www.noordertaxi.nl",
   },
   twitter: {

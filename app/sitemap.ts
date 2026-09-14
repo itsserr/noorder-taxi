@@ -4,7 +4,14 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.noordertaxi.nl";
-  const routes = ["", "/reserveren", "/diensten", "/over-ons", "/contact"];
+  const routes = [
+    "",
+    "/reserveren",
+    "/diensten",
+    "/over-ons",
+    "/contact",
+    "/klachtenregeling",
+  ];
 
   return routes.map((route) => ({
     url: `${base}${route}`,

@@ -51,7 +51,7 @@ export default function OverOnsPage() {
               bedrijven die waarde hechten aan stiptheid en discretie.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Onze chauffeurs kennen de regio als hun broekzak en behandelen
+              Onze chauffeurs kennen de regio door en door en behandelen
               elke rit met dezelfde zorgvuldigheid, of het nu gaat om een
               vroege vlucht naar Schiphol of een avond uit uw eigen buurt.
             </p>

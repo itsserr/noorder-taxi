@@ -80,9 +80,17 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {SITE.name}. Alle rechten
             voorbehouden.
           </p>
-          <p>
-            KvK {SITE.kvk} &middot; BTW {SITE.btw}
-          </p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+            <Link
+              href="/klachtenregeling"
+              className="transition-colors hover:text-foreground"
+            >
+              Klachtenregeling
+            </Link>
+            <p>
+              KvK {SITE.kvk} &middot; BTW {SITE.btw}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

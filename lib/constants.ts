@@ -54,7 +54,7 @@ export const SERVICES = [
     slug: "feest-vervoer",
     title: "Feest vervoer",
     description:
-      "Veilig en verzorgd naar en van feesten, bruiloften en partijen — dag en nacht, u hoeft nergens op te letten.",
+      "Veilig en verzorgd naar en van feesten, bruiloften en partijen, dag en nacht. U hoeft nergens op te letten.",
     detail:
       "Op weg naar een bruiloft, verjaardag, personeelsfeest of een avond stappen? Wij brengen en halen uw hele gezelschap, zodat niemand hoeft te rijden. Overdag of 's avonds laat: geniet zorgeloos en kom veilig thuis.",
   },
@@ -87,7 +87,7 @@ export const WHY_US = [
   {
     title: "Professionele chauffeurs",
     description:
-      "Ervaren, representatief en discreet — voor zowel zakelijke als particuliere ritten.",
+      "Ervaren, representatief en discreet, voor zowel zakelijke als particuliere ritten.",
   },
 ];
 
@@ -102,7 +102,7 @@ export const HOW_IT_WORKS = [
   },
   {
     title: "Dien uw aanvraag in",
-    description: "Verstuur de reservering — dit is nog geen definitieve boeking.",
+    description: "Verstuur de reservering. Dit is nog geen definitieve boeking.",
   },
   {
     title: "Telefonische bevestiging",
