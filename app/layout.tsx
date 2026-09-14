@@ -65,6 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" className={`${bodoniModa.variable} ${inter.variable}`}>
+      {/* build-marker: auto-deploy-test-1 */}
       <body className="font-sans">
         <Header />
         <main className="min-h-screen">{children}</main>
