@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static-assets deploy.
+  // `npx next build` produces the static site in ./out (see next.config.mjs),
+  // and `npx wrangler deploy` uploads that folder. On every git push,
+  // Cloudflare rebuilds and redeploys automatically.
+  "name": "noorder-taxi-last",
+  "compatibility_date": "2025-09-14",
+  "assets": {
+    "directory": "./out"
+  }
+}
