@@ -21,41 +21,88 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.noordertaxi.nl"),
+  metadataBase: new URL("https://noordertaxi.nl"),
   title: {
-    default: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
+    default: "Noorder Taxi | Taxi in Groningen en omgeving",
     template: "%s | Noorder Taxi",
   },
   description:
-    "Noorder Taxi verzorgt persoonlijk, hoogwaardig taxivervoer voor luchthaventransfers, zakelijke ritten en speciale gelegenheden. Reserveer eenvoudig online, telefonisch bevestigd.",
+    "Taxi nodig in Groningen? Noorder Taxi rijdt u dag en nacht, op afspraak. Luchthavenritten naar Schiphol, zakelijk vervoer en ritten voor elke gelegenheid. Bel of app 06-31304241.",
   keywords: [
     "taxi Groningen",
-    "luxe taxi",
-    "luchthaventransfer Schiphol",
-    "zakelijk taxivervoer",
-    "chauffeursservice",
+    "taxi Haren",
+    "taxi Assen",
+    "luchthavenvervoer Schiphol",
+    "zakelijk taxivervoer Groningen",
     "Noorder Taxi",
   ],
   authors: [{ name: "Noorder Taxi" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "nl_NL",
     siteName: "Noorder Taxi",
-    title: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
+    title: "Noorder Taxi | Taxi in Groningen en omgeving",
     description:
-      "Persoonlijk, hoogwaardig taxivervoer. Luchthaventransfers, zakelijke ritten en speciale gelegenheden, telefonisch bevestigd.",
-    url: "https://www.noordertaxi.nl",
+      "Dag en nacht met de taxi door Groningen en omgeving. Luchthavenritten, zakelijk vervoer en ritten voor elke gelegenheid, telefonisch bevestigd.",
+    url: "https://noordertaxi.nl",
+    images: [
+      {
+        url: "/noorder-taxi-hero.jpg",
+        alt: "Zwarte Mercedes-Benz Vito van Noorder Taxi",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noorder Taxi | Exclusief taxivervoer in Groningen en omgeving",
+    title: "Noorder Taxi | Taxi in Groningen en omgeving",
     description:
-      "Persoonlijk, hoogwaardig taxivervoer. Reserveer eenvoudig, telefonisch bevestigd.",
+      "Dag en nacht met de taxi door Groningen en omgeving. Bel of app ons voor een rit.",
+    images: ["/noorder-taxi-hero.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "TaxiService"],
+  name: "Noorder Taxi",
+  url: "https://noordertaxi.nl",
+  image: "https://noordertaxi.nl/noorder-taxi-hero.jpg",
+  telephone: "+31631304241",
+  email: "info@noordertaxi.nl",
+  description:
+    "Taxibedrijf in Groningen en omgeving. Dag en nacht op afspraak, voor luchthavenritten, zakelijk vervoer en ritten voor elke gelegenheid.",
+  areaServed: [
+    { "@type": "City", name: "Groningen" },
+    { "@type": "City", name: "Haren" },
+    { "@type": "City", name: "Assen" },
+    { "@type": "AdministrativeArea", name: "Provincie Groningen" },
+  ],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "00:00",
+    closes: "23:59",
+  },
+  priceRange: "€€",
+  currenciesAccepted: "EUR",
+  paymentAccepted:
+    "Contant, Maestro, V PAY, Visa, Mastercard, Apple Pay, Google Pay, contactloos",
+  vatID: "NL005460137B10",
 };
 
 export default function RootLayout({
@@ -65,8 +112,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" className={`${bodoniModa.variable} ${inter.variable}`}>
-      {/* build-marker: auto-deploy-test-1 */}
       <body className="font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

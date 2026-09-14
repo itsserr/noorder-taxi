@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Diensten",
   description:
     "Luchthavenvervoer, zakelijk en particulier vervoer, nachtelijke ritten, feest vervoer en vervoer op afspraak. Alle diensten van Noorder Taxi op een rij.",
+  alternates: { canonical: "/diensten/" },
 };
 
 export default function DienstenPage() {

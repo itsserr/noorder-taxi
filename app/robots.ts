@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.noordertaxi.nl/sitemap.xml",
+    sitemap: "https://noordertaxi.nl/sitemap.xml",
   };
 }

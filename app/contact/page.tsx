@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Neem contact op met Noorder Taxi via telefoon, WhatsApp of e-mail. Wij staan klaar om uw rit te bevestigen.",
+  alternates: { canonical: "/contact/" },
 };
 
 const DETAILS = [

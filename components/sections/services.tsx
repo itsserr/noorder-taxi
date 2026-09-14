@@ -12,7 +12,7 @@ export function Services() {
           <div className="max-w-xl">
             <p className="eyebrow mb-4">Diensten</p>
             <h2 className="font-display text-3xl italic text-foreground sm:text-4xl">
-              Voor elk moment dat aandacht verdient
+              Waar kunnen wij u heen brengen?
             </h2>
           </div>
           <Link

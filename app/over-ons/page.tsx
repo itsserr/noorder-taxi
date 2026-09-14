@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Over ons",
   description:
     "Het verhaal achter Noorder Taxi: persoonlijk taxivervoer, gebouwd op betrouwbaarheid, vakmanschap en aandacht voor de reiziger.",
+  alternates: { canonical: "/over-ons/" },
 };
 
 const VALUES = [
@@ -44,11 +45,11 @@ export default function OverOnsPage() {
               Gebouwd op vertrouwen, rit na rit
             </h1>
             <p className="mt-6 text-base leading-relaxed text-muted">
-              Noorder Taxi is opgericht vanuit een eenvoudige overtuiging: een
-              taxirit moet zorgeloos zijn, van de eerste bevestiging tot de
-              laatste stap uit de auto. Wat begon als een kleine, lokale
-              onderneming is uitgegroeid tot een vaste naam voor reizigers en
-              bedrijven die waarde hechten aan stiptheid en discretie.
+              Noorder Taxi is een taxibedrijf uit de regio Groningen. Ons idee
+              is simpel: u komt zonder gedoe van deur tot deur, of het nu om een
+              vroege vlucht gaat of een avondje uit. Vaste chauffeurs, korte
+              lijnen en altijd een telefoontje ter bevestiging, geen anoniem
+              systeem.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted">
               Onze chauffeurs kennen de regio door en door en behandelen
@@ -108,8 +109,8 @@ export default function OverOnsPage() {
         <div className="container-luxe flex flex-col items-center text-center">
           <RouteLine className="w-32 text-white/20" />
           <p className="mt-8 max-w-lg font-display text-2xl italic text-foreground">
-            &ldquo;Elke rit begint met een adres en eindigt met een
-            belofte.&rdquo;
+            &ldquo;Op tijd weg, veilig thuis. Daar draait het bij ons
+            om.&rdquo;
           </p>
         </div>
       </section>

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Reserveren",
   description:
     "Reserveer eenvoudig uw taxirit bij Noorder Taxi. Minimaal 24 uur van tevoren, telefonisch bevestigd.",
+  alternates: { canonical: "/reserveren/" },
 };
 
 export default function ReserverenPage() {

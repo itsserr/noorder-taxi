@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Klachtenregeling",
   description:
     "Onze klachtenregeling: hoe u een klacht indient bij Noorder Taxi en hoe wij deze afhandelen.",
+  alternates: { canonical: "/klachtenregeling/" },
 };
 
 const STEPS = [

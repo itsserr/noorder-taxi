@@ -73,8 +73,8 @@ export function Hero() {
           <span className="mt-7 block h-px w-16 animate-fade-up bg-gradient-to-r from-navy-light to-transparent opacity-0 [animation-delay:0.42s]" />
 
           <p className="mt-7 max-w-md animate-fade-up text-balance text-base leading-relaxed text-foreground/90 [text-shadow:0_1px_14px_rgba(0,0,0,0.75)] opacity-0 [animation-delay:0.52s] sm:text-lg">
-            Professioneel en betrouwbaar taxivervoer, 24/7 beschikbaar op
-            afspraak.
+            Professioneel taxivervoer in Groningen en omgeving. Dag en nacht,
+            op afspraak.
           </p>
 
           <div className="mt-10 flex animate-fade-up flex-col gap-4 opacity-0 [animation-delay:0.68s] sm:flex-row sm:items-center">
