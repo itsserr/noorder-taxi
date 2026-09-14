@@ -8,8 +8,8 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-surface">
       <div className="container-luxe py-20 sm:py-24">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-6">
-          <div className="lg:col-span-2">
+        <div className="grid gap-12 md:grid-cols-4">
+          <div>
             <Link href="/" className="flex items-baseline gap-2">
               <span className="font-display text-2xl uppercase text-foreground">
                 Noorder
@@ -58,16 +58,10 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="eyebrow mb-4">Klantenservice</p>
-            <ul className="space-y-3 text-sm text-muted">
               <li>
                 <Link
                   href="/klachtenregeling"
-                  className="transition-colors hover:text-foreground"
+                  className="text-muted transition-colors hover:text-foreground"
                 >
                   Klachtenregeling
                 </Link>
