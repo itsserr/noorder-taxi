@@ -8,8 +8,8 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-surface">
       <div className="container-luxe py-20 sm:py-24">
-        <div className="grid gap-12 md:grid-cols-4">
-          <div>
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-6">
+          <div className="lg:col-span-2">
             <Link href="/" className="flex items-baseline gap-2">
               <span className="font-display text-2xl uppercase text-foreground">
                 Noorder
@@ -37,6 +37,28 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow mb-4">Klantenservice</p>
+            <ul className="space-y-3 text-sm text-muted">
+              <li>
+                <Link
+                  href="/klachtenregeling"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Klachtenregeling
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Vragen? Neem contact op
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -80,22 +102,9 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {SITE.name}. Alle rechten
             voorbehouden.
           </p>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            <Link
-              href="/klachtenregeling"
-              className="transition-colors hover:text-foreground"
-            >
-              Klachtenregeling
-            </Link>
-            <span aria-hidden className="text-muted-2/40">
-              &middot;
-            </span>
-            <span>KvK {SITE.kvk}</span>
-            <span aria-hidden className="text-muted-2/40">
-              &middot;
-            </span>
-            <span>BTW {SITE.btw}</span>
-          </div>
+          <p>
+            KvK {SITE.kvk} &middot; BTW {SITE.btw}
+          </p>
         </div>
       </div>
     </footer>
