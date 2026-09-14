@@ -75,21 +75,26 @@ export function Footer() {
           <PaymentMethods />
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-white/5 pt-10 text-xs text-muted-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/5 pt-10 text-xs text-muted-2 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {SITE.name}. Alle rechten
             voorbehouden.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <Link
               href="/klachtenregeling"
               className="transition-colors hover:text-foreground"
             >
               Klachtenregeling
             </Link>
-            <p>
-              KvK {SITE.kvk} &middot; BTW {SITE.btw}
-            </p>
+            <span aria-hidden className="text-muted-2/40">
+              &middot;
+            </span>
+            <span>KvK {SITE.kvk}</span>
+            <span aria-hidden className="text-muted-2/40">
+              &middot;
+            </span>
+            <span>BTW {SITE.btw}</span>
           </div>
         </div>
       </div>
