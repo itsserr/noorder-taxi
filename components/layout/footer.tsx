@@ -41,28 +41,6 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="eyebrow mb-4">Klantenservice</p>
-            <ul className="space-y-3 text-sm text-muted">
-              <li>
-                <Link
-                  href="/klachtenregeling"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Klachtenregeling
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Vragen? Neem contact op
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <p className="eyebrow mb-4">Contact</p>
             <ul className="space-y-3 text-sm text-muted">
               <li className="flex items-center gap-3">
@@ -79,6 +57,20 @@ export function Footer() {
                 >
                   {SITE.email}
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow mb-4">Klantenservice</p>
+            <ul className="space-y-3 text-sm text-muted">
+              <li>
+                <Link
+                  href="/klachtenregeling"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Klachtenregeling
+                </Link>
               </li>
             </ul>
           </div>
