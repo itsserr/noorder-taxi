@@ -38,17 +38,19 @@ export default function KlachtenregelingPage() {
     <>
       <section className="section-y-first">
         <div className="container-luxe max-w-2xl">
-          <p className="eyebrow mb-4">Klachtenregeling</p>
-          <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
-            Niet tevreden? Laat het ons weten
-          </h1>
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <div className="text-center">
+            <p className="eyebrow mb-4">Klachtenregeling</p>
+            <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
+              Niet tevreden? Laat het ons weten
+            </h1>
+            <p className="mt-6 text-base leading-relaxed text-muted">
             Wij doen ons uiterste best om elke rit zorgeloos te laten verlopen.
             Toch kan het gebeuren dat u ergens niet tevreden over bent. Uw
             feedback is voor ons waardevol, want daarmee verbeteren wij onze
             dienstverlening. Hieronder leest u hoe u een klacht bij ons indient
             en hoe wij deze afhandelen.
-          </p>
+            </p>
+          </div>
 
           <div className="mt-12 space-y-8">
             {STEPS.map((step) => (

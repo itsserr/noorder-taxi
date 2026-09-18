@@ -15,16 +15,18 @@ export default function ReserverenPage() {
   return (
     <section className="section-y-first">
       <div className="container-luxe max-w-3xl">
-        <p className="eyebrow mb-4">Reserveren</p>
-        <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
-          Plan uw rit
-        </h1>
-        <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
-          Reserveer eenvoudig uw taxirit. Reserveringen dienen minimaal 24 uur
-          vooraf te worden aangevraagd. Na ontvangst van uw aanvraag nemen wij
-          telefonisch contact met u op om de reservering definitief te
-          bevestigen.
-        </p>
+        <div className="text-center">
+          <p className="eyebrow mb-4">Reserveren</p>
+          <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
+            Plan uw rit
+          </h1>
+          <p className="mt-5 mx-auto max-w-xl text-base leading-relaxed text-muted">
+            Reserveer eenvoudig uw taxirit. Reserveringen dienen minimaal 24 uur
+            vooraf te worden aangevraagd. Na ontvangst van uw aanvraag nemen wij
+            telefonisch contact met u op om de reservering definitief te
+            bevestigen.
+          </p>
+        </div>
 
         <div className="mt-8 flex flex-col gap-4 rounded-sm border border-white/8 bg-surface px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm leading-relaxed text-muted">

@@ -8,7 +8,7 @@ export function Services() {
   return (
     <section className="section-y">
       <div className="container-luxe">
-        <div className="mb-16 flex flex-col gap-6 sm:mb-20 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mb-16 flex flex-col items-center gap-6 text-center sm:mb-20">
           <div className="max-w-xl">
             <p className="eyebrow mb-4">Diensten</p>
             <h2 className="font-display text-3xl italic text-foreground sm:text-4xl">
@@ -17,7 +17,7 @@ export function Services() {
           </div>
           <Link
             href="/diensten"
-            className="group flex shrink-0 items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
+            className="group flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
           >
             Alle diensten
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

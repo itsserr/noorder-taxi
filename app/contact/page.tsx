@@ -36,15 +36,17 @@ export default function ContactPage() {
   return (
     <section className="section-y-first">
       <div className="container-luxe max-w-2xl">
-        <p className="eyebrow mb-4">Contact</p>
-        <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
-          We staan voor u klaar
-        </h1>
-        <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-          Voor een rit binnen 24 uur belt of appt u ons het snelst, dan
-          regelen we het direct telefonisch. Plant u verder vooruit, gebruik
-          dan gerust ons reserveringsformulier.
-        </p>
+        <div className="text-center">
+          <p className="eyebrow mb-4">Contact</p>
+          <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
+            We staan voor u klaar
+          </h1>
+          <p className="mt-6 mx-auto max-w-md text-base leading-relaxed text-muted">
+            Voor een rit binnen 24 uur belt of appt u ons het snelst, dan
+            regelen we het direct telefonisch. Plant u verder vooruit, gebruik
+            dan gerust ons reserveringsformulier.
+          </p>
+        </div>
 
         <ul className="mt-10 space-y-6">
           {DETAILS.map((detail) => (

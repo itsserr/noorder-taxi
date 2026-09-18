@@ -4,7 +4,7 @@ export function HowItWorks() {
   return (
     <section className="section-y border-t border-white/5 bg-surface">
       <div className="container-luxe">
-        <div className="mb-16 max-w-xl sm:mb-20">
+        <div className="mb-16 max-w-xl mx-auto text-center sm:mb-20">
           <p className="eyebrow mb-4">Hoe werkt het</p>
           <h2 className="font-display text-3xl italic text-foreground sm:text-4xl">
             In vijf stappen onderweg

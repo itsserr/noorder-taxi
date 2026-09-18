@@ -60,8 +60,8 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background/70 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-background via-background/70 to-transparent" />
 
-      <div className="container-luxe relative z-10 flex flex-1 items-center">
-        <div ref={textRef} className="max-w-xl">
+      <div className="container-luxe relative z-10 flex flex-1 items-center justify-center">
+        <div ref={textRef} className="mx-auto max-w-2xl text-center">
           <p className="eyebrow animate-fade-up opacity-0 [animation-delay:0.1s]">
             Taxivervoer op maat
           </p>
@@ -70,14 +70,14 @@ export function Hero() {
             Noorder Taxi
           </h1>
 
-          <span className="mt-7 block h-px w-16 animate-fade-up bg-gradient-to-r from-navy-light to-transparent opacity-0 [animation-delay:0.42s]" />
+          <span className="mt-7 mx-auto block h-px w-16 animate-fade-up bg-gradient-to-r from-transparent via-navy-light to-transparent opacity-0 [animation-delay:0.42s]" />
 
-          <p className="mt-7 max-w-md animate-fade-up text-balance text-base leading-relaxed text-foreground/90 [text-shadow:0_1px_14px_rgba(0,0,0,0.75)] opacity-0 [animation-delay:0.52s] sm:text-lg">
+          <p className="mt-7 mx-auto max-w-md animate-fade-up text-balance text-base leading-relaxed text-foreground/90 [text-shadow:0_1px_14px_rgba(0,0,0,0.75)] opacity-0 [animation-delay:0.52s] sm:text-lg">
             Professioneel taxivervoer in Groningen en omgeving. Dag en nacht,
             op afspraak.
           </p>
 
-          <div className="mt-10 flex animate-fade-up flex-col gap-4 opacity-0 [animation-delay:0.68s] sm:flex-row sm:items-center">
+          <div className="mt-10 flex animate-fade-up flex-col gap-4 opacity-0 [animation-delay:0.68s] sm:flex-row sm:items-center sm:justify-center">
             <Link href="/reserveren" className="w-full sm:w-auto">
               <Button
                 size="lg"

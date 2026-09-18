@@ -18,7 +18,7 @@ export default function DienstenPage() {
   return (
     <>
       <section className="section-y-first">
-        <div className="container-luxe max-w-2xl">
+        <div className="container-luxe max-w-2xl text-center">
           <p className="eyebrow mb-4">Diensten</p>
           <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
             Vervoer voor elk moment
