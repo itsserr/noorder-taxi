@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, FileText } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 import { RouteLine } from "@/components/ui/route-line";
 import { PaymentMethods } from "@/components/layout/payment-methods";
@@ -58,11 +58,9 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li>
-                <Link
-                  href="/klachtenregeling"
-                  className="text-muted transition-colors hover:text-foreground"
-                >
+              <li className="flex items-center justify-center gap-3">
+                <FileText className="h-4 w-4 shrink-0 text-navy-light" />
+                <Link href="/klachtenregeling" className="hover:text-foreground">
                   Klachtenregeling
                 </Link>
               </li>
