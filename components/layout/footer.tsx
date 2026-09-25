@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Phone, Mail, FileText } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
+import { REGIONS } from "@/lib/regions";
 import { PaymentMethods } from "@/components/layout/payment-methods";
 
 export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-surface">
       <div className="container-luxe py-20 sm:py-24">
-        <div className="grid gap-12 text-center md:grid-cols-4">
+        <div className="grid gap-12 text-center sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <Link href="/" className="flex items-baseline justify-center gap-2">
               <span className="font-display text-2xl uppercase text-foreground">
@@ -33,6 +34,22 @@ export function Footer() {
                     className="text-sm text-muted transition-colors hover:text-foreground"
                   >
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow mb-4">Werkgebied</p>
+            <ul className="space-y-3">
+              {REGIONS.map((region) => (
+                <li key={region.slug}>
+                  <Link
+                    href={`/taxi/${region.slug}`}
+                    className="text-sm text-muted transition-colors hover:text-foreground"
+                  >
+                    Taxi {region.name}
                   </Link>
                 </li>
               ))}

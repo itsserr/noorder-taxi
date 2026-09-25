@@ -79,10 +79,14 @@ const jsonLd = {
   description:
     "Taxibedrijf in Groningen en omgeving. Dag en nacht op afspraak, voor luchthavenritten, zakelijk vervoer en ritten voor elke gelegenheid.",
   areaServed: [
+    { "@type": "AdministrativeArea", name: "Groningen" },
+    { "@type": "AdministrativeArea", name: "Friesland" },
+    { "@type": "AdministrativeArea", name: "Drenthe" },
     { "@type": "City", name: "Groningen" },
-    { "@type": "City", name: "Haren" },
+    { "@type": "City", name: "Leeuwarden" },
     { "@type": "City", name: "Assen" },
-    { "@type": "AdministrativeArea", name: "Provincie Groningen" },
+    { "@type": "City", name: "Emmen" },
+    { "@type": "City", name: "Haren" },
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
