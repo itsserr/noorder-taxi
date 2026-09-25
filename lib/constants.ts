@@ -118,9 +118,8 @@ export const HOW_IT_WORKS = [
 export const GOOGLE_REVIEWS = {
   score: "5,0",
   count: 3,
-  // Vervang door de exacte deel-link van het Google-bedrijfsprofiel voor een
-  // directe koppeling naar de reviews.
-  url: "https://www.google.com/maps/search/Noorder+Taxi+Groningen",
+  // Directe deel-link van het Google-bedrijfsprofiel (reviews).
+  url: "https://g.page/r/CbBfZJU-qdVuECE/review",
 };
 
 /**
