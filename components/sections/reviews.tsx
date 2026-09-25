@@ -105,7 +105,7 @@ export function Reviews() {
       </div>
 
       {/* Schuin zwevende reviews, doorlopend van rechts naar links. */}
-      <div className="relative -rotate-2 py-4">
+      <div className="relative py-4">
         <div className="flex w-max animate-marquee">
           <div className="flex gap-6 pr-6">
             {group.map((review, i) => (
