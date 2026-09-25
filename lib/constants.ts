@@ -1,3 +1,8 @@
+// Web3Forms access key: koppelt het reserveringsformulier aan de mailbox.
+// Haal een gratis sleutel op via https://web3forms.com (voer info@noordertaxi.nl
+// in als ontvanger). De sleutel is bedoeld om openbaar in de code te staan.
+export const WEB3FORMS_ACCESS_KEY = "8d3d3a03-b020-40a0-a05f-094bfa257a86";
+
 export const SITE = {
   name: "Noorder Taxi",
   tagline: "Persoonlijk vervoer, vakkundig gereden.",

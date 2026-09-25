@@ -12,7 +12,7 @@ import { Select } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { DatePicker } from "@/components/ui/date-picker";
 import { RouteLine } from "@/components/ui/route-line";
-import { SITE } from "@/lib/constants";
+import { SITE, WEB3FORMS_ACCESS_KEY } from "@/lib/constants";
 
 const TIME_OPTIONS = Array.from({ length: 24 * 4 }, (_, i) => {
   const hours = Math.floor(i / 4);
@@ -57,6 +57,8 @@ export function BookingForm() {
   const [form, setForm] = useState<FormState>(INITIAL_STATE);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const minDate = useMemo(getMinDate, []);
 
@@ -81,10 +83,52 @@ export function BookingForm() {
     return Object.keys(next).length === 0;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (validate()) {
-      setSubmitted(true);
+    if (!validate()) return;
+
+    setSubmitError(null);
+    setSubmitting(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Nieuwe reservering — ${form.naam}`,
+          from_name: "Noorder Taxi website",
+          replyto: form.email,
+          Naam: form.naam,
+          Telefoon: form.telefoon,
+          "E-mail": form.email,
+          Ophaallocatie: form.ophaallocatie,
+          Bestemming: form.bestemming,
+          Datum: form.datum
+            ? format(form.datum, "EEEE d MMMM yyyy", { locale: nl })
+            : "",
+          Tijd: form.tijd,
+          Personen: form.personen,
+          Koffers: form.koffers,
+          Opmerkingen: form.opmerkingen || "-",
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(
+          "Het versturen is niet gelukt. Probeer het opnieuw, of bel/WhatsApp ons direct."
+        );
+      }
+    } catch {
+      setSubmitError(
+        "Er ging iets mis met de verbinding. Probeer het opnieuw, of bel/WhatsApp ons direct."
+      );
+    } finally {
+      setSubmitting(false);
     }
   }
 
@@ -337,10 +381,19 @@ export function BookingForm() {
             {SITE.email}
           </a>
         </p>
-        <Button type="submit" size="lg" className="w-full sm:w-auto">
-          Reservering Aanvragen
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full sm:w-auto"
+          disabled={submitting}
+        >
+          {submitting ? "Versturen..." : "Reservering Aanvragen"}
         </Button>
       </div>
+
+      {submitError && (
+        <p className="text-sm text-red-400">{submitError}</p>
+      )}
     </form>
   );
 }
