@@ -114,31 +114,25 @@ export const HOW_IT_WORKS = [
   },
 ];
 
+/** Samenvatting van de Google-beoordeling (handmatig bijhouden). */
+export const GOOGLE_REVIEWS = { score: "5,0", count: 3 };
+
 /**
- * Placeholder testimonials — vervang met echte klantbeoordelingen zodra
- * die beschikbaar zijn. Geen bestaande klanten, puur ter illustratie van
- * de sectie-layout.
+ * Echte Google-reviews (5 sterren). Reviews zonder geschreven tekst worden
+ * niet als kaart getoond, maar tellen wel mee in GOOGLE_REVIEWS.count.
  */
 export const REVIEWS = [
   {
-    name: "S. Willems",
-    location: "Groningen",
+    name: "Joy Woltman",
+    location: "",
     rating: 5,
-    quote:
-      "Ruim op tijd voor onze vlucht om vier uur 's ochtends. Rustige rit, representatieve chauffeur.",
+    quote: "Betrouwbare, gezellige en snelle chauffeur! Echt een aanrader.",
   },
   {
-    name: "M. de Groot",
-    location: "Haren",
+    name: "Sergen Escapes",
+    location: "",
     rating: 5,
     quote:
-      "Wij gebruiken Noorder Taxi voor al ons zakelijk vervoer. Altijd stipt en de facturatie is moeiteloos geregeld.",
-  },
-  {
-    name: "R. Jansen",
-    location: "Assen",
-    rating: 5,
-    quote:
-      "Een rit laat op de avond geboekt na een etentje dat uitliep. Binnen een kwartier telefonisch bevestigd.",
+      "Prettige rit gehad, met een vriendelijke chauffeur. Een dikke aanrader!",
   },
 ];
