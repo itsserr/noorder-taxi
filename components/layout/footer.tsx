@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, FileText } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
-import { RouteLine } from "@/components/ui/route-line";
 import { PaymentMethods } from "@/components/layout/payment-methods";
 
 export function Footer() {
@@ -73,7 +72,6 @@ export function Footer() {
               Ritten graag minimaal 24 uur van tevoren aanvragen. Elke
               reservering wordt telefonisch bevestigd.
             </p>
-            <RouteLine className="mt-6 mx-auto w-32 text-white/20" />
           </div>
         </div>
 
