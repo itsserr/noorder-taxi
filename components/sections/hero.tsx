@@ -62,7 +62,7 @@ export function Hero() {
 
       <div className="container-luxe relative z-10 flex flex-1 items-center justify-center">
         <div ref={textRef} className="mx-auto max-w-2xl text-center">
-          <p className="eyebrow animate-fade-up opacity-0 [animation-delay:0.1s]">
+          <p className="eyebrow animate-fade-up opacity-0 [text-shadow:0_1px_12px_rgba(0,0,0,0.9)] [animation-delay:0.1s]">
             Taxivervoer op maat
           </p>
 

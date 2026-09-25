@@ -39,7 +39,7 @@ export default function OverOnsPage() {
     <>
       <section className="section-y-first">
         <div className="container-luxe grid gap-14 lg:grid-cols-2 lg:items-center">
-          <div className="text-center">
+          <div>
             <p className="eyebrow mb-4">Over ons</p>
             <h1 className="font-display text-4xl italic text-foreground sm:text-5xl">
               Gebouwd op vertrouwen, rit na rit
@@ -56,7 +56,7 @@ export default function OverOnsPage() {
               elke rit met dezelfde zorgvuldigheid, of het nu gaat om een
               vroege vlucht naar Schiphol of een avond uit uw eigen buurt.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/reserveren" className="w-full sm:w-auto">
                 <Button className="w-full">Boek Nu</Button>
               </Link>
