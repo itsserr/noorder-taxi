@@ -119,6 +119,19 @@ export function Reviews() {
           </div>
         </div>
       </div>
+
+      <div className="container-luxe mt-12 text-center">
+        <a
+          href={GOOGLE_REVIEWS.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
+        >
+          <GoogleG className="h-4 w-4" />
+          Bekijk al onze reviews op Google
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
     </section>
   );
 }

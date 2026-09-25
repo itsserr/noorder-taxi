@@ -115,7 +115,13 @@ export const HOW_IT_WORKS = [
 ];
 
 /** Samenvatting van de Google-beoordeling (handmatig bijhouden). */
-export const GOOGLE_REVIEWS = { score: "5,0", count: 3 };
+export const GOOGLE_REVIEWS = {
+  score: "5,0",
+  count: 3,
+  // Vervang door de exacte deel-link van het Google-bedrijfsprofiel voor een
+  // directe koppeling naar de reviews.
+  url: "https://www.google.com/maps/search/Noorder+Taxi+Groningen",
+};
 
 /**
  * Echte Google-reviews (5 sterren). Reviews zonder geschreven tekst worden
